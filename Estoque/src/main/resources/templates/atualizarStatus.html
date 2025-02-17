@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Produtos e Pedidos</title>
+    <link rel="stylesheet" href="/css/layout/sidebar.css">
+    <link rel="stylesheet" href="/css/components/formulario.css">
+    <link rel="stylesheet" href="/css/components/botao.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container-sidebar">
+    <!-- Nav Lateral -->
+    <nav class="sidebar">
+        <h2>Menu</h2>
+        <div class="links-sidebar">
+            <ul>
+                <li><a href="criarPedido">Criar Pedido</a></li>
+                <li><a href="listarPedidos">Listar Pedidos</a></li>
+                <li><a href="atualizarStatus">Atualizar Status</a></li>
+                <li><a href="gerarRelatorio">Gerar Relatório</a></li>
+                <li><a href="cancelarPedido">Cancelar Pedido</a></li>
+                <li><a href="cadastrarProduto">Cadastrar Produto</a></li>
+                <li><a href="listarProdutos">Listar Produtos</a></li>
+                <li><a href="removerProduto">Remover Produto</a></li>
+            </ul>
+        </div>
+        <div class="botoes-sidebar">
+            <button href="#" class="logout">Logout</button>
+            <button href="#" class="suporte">Suporte</button>
+        </div>
+    </nav>
+
+    <!-- Conteúdo -->
+    <div class="form-container">
+        <h1 class="title-form">Atualizar Status do Pedido</h1>
+        <form class="form">
+
+            <label for="pedido">Número do Pedido:</label>
+            <input type="number" id="pedido" name="pedido" required>
+
+            <label for="status">Atualizar Status do Pedido:</label>
+            <input list="status-pedido" id="status" name="status">
+            <datalist id="status-pedido">
+                <option value="PENDENTE">
+                <option value="PROCESSANDO">
+                <option value="FINALIZADO">
+                <option value="CANCELADO">
+            </datalist>
+
+            <button type="submit" class="botao">Atualizar Status</button>
+        </form>
+    </div>
+
+
+
+</div>
+
+<script src="/js/service/atualizarStatusPedido.js"></script>
+</body>
+</html>

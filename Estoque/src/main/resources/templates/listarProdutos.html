@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Produtos e Pedidos</title>
+    <link rel="stylesheet" href="/css/layout/sidebar.css">
+    <link rel="stylesheet" href="/css/layout/listing.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container-sidebar">
+    <!-- Nav Lateral -->
+    <nav class="sidebar">
+        <h2>Menu</h2>
+        <div class="links-sidebar">
+            <ul>
+                <li><a href="criarPedido">Criar Pedido</a></li>
+                <li><a href="listarPedidos">Listar Pedidos</a></li>
+                <li><a href="atualizarStatus">Atualizar Status</a></li>
+                <li><a href="gerarRelatorio">Gerar Relatório</a></li>
+                <li><a href="cancelarPedido">Cancelar Pedido</a></li>
+                <li><a href="cadastrarProduto">Cadastrar Produto</a></li>
+                <li><a href="listarProdutos">Listar Produtos</a></li>
+                <li><a href="removerProduto">Remover Produto</a></li>
+            </ul>
+        </div>
+        <div class="botoes-sidebar">
+            <button href="#" class="logout">Logout</button>
+            <button href="#" class="suporte">Suporte</button>
+        </div>
+    </nav>
+
+    <!-- Conteúdo -->
+    <div class="conteudo">
+        <h2>Lista de Produtos</h2>
+        <table>
+            <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>Preço</th>
+            </tr>
+            </thead>
+            <tbody id="listaProdutos">
+            <!-- Os produtos serão inseridos aqui -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="/js/models/podutosListados.js"></script>
+</body>
+</html>

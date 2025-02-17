@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que o padding não afete o tamanho */
+}
+
+.conteudo-inicio {
+    margin-left: 250px; /* Deixa espaço para a sidebar */
+    width: calc(100vw - 250px); /* Ocupa o espaço restante */
+    height: 100vh;
+    display: flex;
+    flex-direction: column; /* Mantém os elementos empilhados verticalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.apresentacao-inicio {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
